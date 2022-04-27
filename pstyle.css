@@ -1,0 +1,482 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "share tech", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  @import url(https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap);
+  font-family: "share tech", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* HEADER AND NAVIGATION*/
+
+header {
+  background-color: #ffc935;
+  display: flex;
+  width: 100vw;
+  position: relative;
+}
+
+.logo {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  height: 9rem;
+  width: auto;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 8.6rem;
+  font-family: "Share Tech mono";
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+nav {
+  margin-right: 6rem;
+  margin-left: auto;
+  margin-top: 2rem;
+  font-size: 3rem;
+
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "share tech";
+}
+
+.nav--text {
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.search {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/*Section 1*/
+
+.section--1 {
+  display: flex;
+  gap: 5rem;
+  background-color: #fdf2e9;
+  font-family: "share tech";
+}
+
+.container-pp {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  margin-left: 2rem;
+}
+
+.danny {
+  border-radius: 50%;
+  height: 30rem;
+  width: 30rem;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.322);
+
+  border: #ffc935 solid 5px;
+}
+
+.btn {
+  height: 7rem;
+  width: 30rem;
+  border-radius: 1rem;
+  background-color: black;
+
+  color: #fddb60;
+  /* font-weight: bold; */
+  font-family: "Share Tech Mono";
+  font-size: 2.4rem;
+
+  transition: box-shadow 0.15s;
+}
+
+.btn:hover,
+.btn:active {
+  box-shadow: 0 0 10px 3px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.container-info {
+  width: 40vw;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container-s2 p {
+  font-size: 2.4rem;
+  font-family: "share tech";
+}
+
+.title-s2 {
+  align-self: center;
+  /* justify-self: center; */
+
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-family: "share tech mono";
+}
+
+.form input {
+  width: 100%;
+  /* width: 50rem; */
+  height: 4rem;
+  padding: 1.2rem;
+  font-size: 2.2rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 1px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
+  /* display: inline-block; */
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-change {
+  height: 5rem;
+  width: 20rem;
+  justify-self: center;
+  margin-bottom: 7rem;
+}
+
+.notification-preferences {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gender-container {
+  display: flex;
+  /* align-items: center; */
+
+  /* gap: 5rem; */
+}
+
+.gender-container input {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.text-gender {
+  margin-top: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.container-checkbox {
+  display: flex;
+  font-size: 2.4rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container-checkbox input {
+  height: 3rem;
+  width: 3rem;
+
+  transform: translate(0, 66%);
+}
+
+.checkbox1 {
+  height: 3rem;
+  width: 3rem;
+}
+
+#checkbox1,
+#checkbox2,
+#checkbox3 {
+  height: 3rem;
+  width: 3rem;
+}
+
+#info {
+  height: 10rem;
+}
+
+.info label {
+  font-size: 2.4rem;
+}
+
+.info input {
+  height: 20rem;
+}
+
+.container-submit {
+  display: flex;
+}
+
+.btn-signupp {
+  margin-left: 8rem;
+  margin-top: 1rem;
+}
+
+.container-notifications {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  font-size: 2.5rem;
+  font-family: "share-tech";
+}
+
+.title-not {
+  font-size: 4rem;
+}
+
+.text-box {
+  background-color: #fddb60;
+  width: 22vw;
+  height: 10rem;
+  /* padding: 5rem; */
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #222;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.322);
+}
+
+/* SECTION 2*/
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  align-items: center;
+}
+
+.container-s3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+  margin-top: 7rem;
+}
+
+.mini-header {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* .container-news {
+  background-color: #ffc935;
+  padding: 5rem;
+} */
+
+.container-news-left,
+.container-news-right {
+  background-color: #ffc935;
+  height: 30rem;
+  width: 60rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.img-s3 {
+  height: 12rem;
+  margin-left: 4rem;
+  border-radius: 1rem;
+}
+
+.btn-news {
+  height: 5rem;
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+.container-content {
+  margin-left: 2rem;
+}
+
+.text-s2 {
+  font-size: 3rem;
+}
+
+.text-s3 {
+  font-size: 3rem;
+  line-height: 1.2;
+  /* text-align: center; */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 20rem;
+}
+.btn-news a:-webkit-any-link {
+  text-decoration: none;
+  color: #ffc935;
+}
+.btt-btn {
+  height: 7rem;
+  width: 30rem;
+  margin-top: 10rem;
+  border-radius: 1rem;
+  background-color: black;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #fddb60;
+  /* font-weight: bold; */
+  font-family: "Share Tech Mono";
+  font-size: 2.4rem;
+  text-decoration: none;
+
+  transition: box-shadow 0.15s;
+}
+
+.btt-btn:hover,
+.btt-btn:active {
+  box-shadow: 0 0 10px 3px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+/* FOOOTER*/
+
+.footer {
+  background-color: #222;
+  color: #ffc935;
+  font-family: "share tech" sans-serif;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  font-size: 2.4rem;
+}
+
+.contact-us {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 21vw;
+  margin-top: 5rem;
+
+  /* text-align: center; */
+}
+
+.follow-us {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 5rem;
+  margin-left: 22vw;
+}
+
+.telephone {
+  margin-left: 10px;
+}
+
+.email-address {
+  margin-left: 12px;
+}
+.email-icon {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 10rem;
+  margin-left: 20vw;
+
+  display: flex;
+}
+
+.contact-info {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 4rem;
+  margin-left: 20vw;
+
+  display: flex;
+  /* justify-content: center; */
+}
+
+.social-media {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 5rem;
+  margin-left: 15vw;
+  display: flex;
+  gap: 1.5rem;
+  /* justify-content: center; */
+}
+
+.social-media-box {
+  height: 4rem;
+  width: 4rem;
+  margin-left: 2vw;
+
+  background-color: rgb(44, 43, 43);
+  box-shadow: 0 0 10px 0.0001px rgba(255, 255, 255, 0.048);
+}
+
+.social-media-box:first-child {
+  margin-left: -2vw;
+}
+
+.social-media-box:hover,
+.social-media-box:active {
+  box-shadow: 0 0 10px 0.0001px rgba(255, 255, 255, 0.205);
+}
+
+.logos {
+  height: 3.4rem;
+  width: 3.4rem;
+  /* stroke: #fddb60; */
+}
+
+.copyright {
+  grid-column: 1/-1;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.icon-footer {
+  height: 4.4rem;
+  width: 4.4rem;
+
+  transform: translate(0, -20%);
+  /* stroke: #ffc935; */
+  /* stroke-width: 4rem; */
+}
